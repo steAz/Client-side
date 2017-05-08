@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <title>Zawodnicy</title>
+    <link rel="Stylesheet" href="styles.css" />
+
+    <script src="scripts/javascript.js"></script>  <!--Przyklad Java Script (migotanie) i JS+API DOM (wypisywanie reszty zawodnikow)-->
+    
+  
+
+   
+
+</head>
+<body>
+
+
+    <div id="dokument">
+
+        <div id="naglowek">
+
+
+
+        </div>
+        <div id="tloKlub">
+
+            <div id="menu">
+
+                <h2>INFORMACJE</h2>
+
+
+                <ol>
+
+                    <li>
+                        <a href="Klub.htm"><b>Klub</b></a>
+                        <ul>
+                            <li><a href="Historia.htm">Historia</a></li>
+                            <li><a href="Stadion.htm">Stadion</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="Zawodnicy.htm"><b>Zawodnicy</b></a></li>
+                    <li><a href="Galeria.htm"><b>Zdobyte trofea-GALERIA</b></a></li>
+
+                </ol>
+
+
+
+            </div>
+            <div id="tresc">
+
+                <h1>Once de Gala</h1>
+                <br />
+                
+                
+                    <table style="height:20em;">
+
+                        <tr id="kolorwiersza">
+
+                            <th>Piłkarze podstawowej 11stki</th>
+                            <th> Numer </th>
+                            <th>Data urodzenia</th>
+                            <th>Pozycja</th>
+
+                        </tr>
+                        <tr>
+                            <th class="kolorkolumny">Keylor Navas</th>
+                            <td> 1</td>
+                            <td> 15.12.1986</td>
+                            <td> Bramkarz</td>
+
+                        </tr>
+                        <tr>
+                            <th class="kolorkolumny">Dani Carvajal</th>
+                            <td> 15</td>
+                            <td> 11.01.1992</td>
+                            <td> Prawy obrońca</td>
+
+                        </tr>
+                        <tr>
+                            <th class="kolorkolumny"> Sergio Ramos</th>
+                            <td> 4</td>
+                            <td>30.03.1986</td>
+                            <td>Stoper</td>
+
+                        </tr>
+                        <tr>
+                            <th class="kolorkolumny">Raphael Varane</th>
+                            <td>2</td>
+                            <td>25.04.1993</td>
+                            <td>Stoper</td>
+
+                        </tr>
+                        <tr>
+                            <th class="kolorkolumny">Marcelo</th>
+                            <td>12</td>
+                            <td>12.05.1988</td>
+                            <td>Lewy obrońca</td>
+
+                        </tr>
+                        <tr>
+                            <th class="kolorkolumny">Toni Kross</th>
+                            <td>8</td>
+                            <td>04.01.1990</td>
+                            <td>Pomocnik</td>
+
+                        </tr>
+                        <tr>
+                            <th class="kolorkolumny">Luka Modric</th>
+                            <td>19</td>
+                            <td> 09.09.1985</td>
+                            <td> Pomocnik</td>
+
+                        </tr>
+
+                        <tr>
+                            <th class="kolorkolumny">James Rodriguez</th>
+                            <td>10</td>
+                            <td> 12.07.1991</td>
+                            <td> Ofensywny pomocnik</td>
+
+                        </tr>
+
+                        <tr>
+                            <th class="kolorkolumny">Gareth Bale</th>
+                            <td>11</td>
+                            <td> 16.07.1989</td>
+                            <td> Prawy skrzydłowy</td>
+
+                        </tr>
+
+                        <tr>
+                            <th class="kolorkolumny">Cristiano Ronaldo</th>
+                            <td>7</td>
+                            <td> 05.02.1985</td>
+                            <td> Lewy skrzydłowy</td>
+
+                        </tr>
+
+                        <tr>
+                            <th class="kolorkolumny">Karim Benzema</th>
+                            <td>9</td>
+                            <td> 19.12.1987</td>
+                            <td> Napastnik</td>
+
+                        </tr>
+
+
+
+                    </table>
+                    <br /><br /><br />
+
+                    <div id="resztaZaw"></div>
+
+                
+               
+
+                <button onclick="wypisywanieResztyZawodnikow()">Wygeneruj reszte zawodnikow</button>
+
+                
+               
+
+                <br /><br /><br /><br />
+
+                <div id="migotanie">
+                    <i>Ankieta dotyczaca gracza sezonu:</i>
+                </div>
+
+                
+
+                <script>
+                        flash("migotanie", "red", 500, "blue", 500);
+
+                </script>
+                
+
+               <br />
+
+                
+                <form action="mailto:michkazan@gmail.com" enctype="text/plain" method="post">
+                    <label>Imie: <input name="imie" /></label>
+                    <br /><br />
+
+                    <label>Nazwisko: <input name="nazwisko" /></label>
+                    <br /><br />
+
+                    <label>Haslo: </label><input type="password" />
+
+                    <br /><br /><br />
+                    Gracz:
+                    <br />
+                    <input type="radio" name="GRACZ" value="Keylor Navas" /> Keylor Navas <br />
+                    <input type="radio" name="GRACZ" value="Dani Carvajal" /> Dani Carvajal <br />
+                    <input type="radio" name="GRACZ" value="Sergio Ramos" /> Sergio Ramos <br />
+                    <input type="radio" name="GRACZ" value="Raphale Varane" /> Raphael Varane <br />
+                    <input type="radio" name="GRACZ" value="Marcelo" /> Marcelo <br />
+                    <input type="radio" name="GRACZ" value="Toni Kross" /> Toni Kross <br />
+                    <input type="radio" name="GRACZ" value="Luka Modric" /> Luka Modric <br />
+                    <input type="radio" name="GRACZ" value="James Rodriguez " /> James Rodriguez <br />
+                    <input type="radio" name="GRACZ" value="Gareth Bale" /> Gareth Bale <br />
+                    <input type="radio" name="GRACZ" value="Cristiano Ronaldo" /> Cristiano Ronaldo <br />
+                    <input type="radio" name="GRACZ" value="Karim Benzema" /> Karim Benzema <br />
+
+                    <br /><br />
+
+                    Czy oglądałeś mecze Realu Madryt?
+                    <br />
+                    <input type="radio" name="MECZE" value="Tak" /> Tak <br />
+                    <input type="radio" name="MECZE" value="Nie" /> Nie <br />
+                    <br /><br />
+                    Jeśli tak, to jakie atuty zespołu zaznaczyłbyś spośród poniższych ( możesz wybrać więcej niż jedno ) ?
+                    <br />
+                    <input type="checkbox" name="STYL" value="Ofensywa" />Ofensywa<br />
+                    <input type="checkbox" name="STYL" value="Defensywa" />Defensywa<br />
+                    <input type="checkbox" name="STYL" value="Posiadanie piłki" />Posiadanie piłki<br />
+                    <input type="checkbox" name="STYL" value="Kontrataki" />Kontrataki<br />
+                    <input type="checkbox" name="STYL" value="Wpływ trenera" />Wpływ trenera<br />
+                    <br /><br />
+
+
+
+                    <textarea name="message" style="width: 340px; height: 132px">Napisz tutaj, dlaczego zdecydowałeś się na taki wybór</textarea>
+                    <input type="reset" value="Wyczysc wybrane opcje" />
+                    <input type="submit" value="Wyslij" />
+
+                </form>
+                <br />
+
+
+
+            </div>
+
+
+            <div id="footer">
+
+                <h3 class="mail"><i><a href="mailto:kazanov18@wp.pl">Jeśli masz jakikolwiek problem, napisz</a></i></h3>
+                &copy; MK
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

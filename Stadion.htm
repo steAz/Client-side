@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Stadion</title>
+    <link rel="Stylesheet" href="styles.css" />
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>   <!--skrypty do jQueryUI przyklad II-->
+    <script src="http://code.jquery.com/ui/1.8.16/jquery-ui.min.js"></script>
+   
+   
+
+    <script src="scripts/session.js"></script>    <!--SESSION STORAGE -->
+    
+
+</head>
+<body>
+
+    <div id="dokument">
+
+        <div id="naglowek">
+
+
+
+        </div>
+        <div id="tloStadion">
+            <div id="menu">
+
+                <h2>INFORMACJE</h2>
+
+
+                <ol>
+
+                    <li>
+                        <a href="Klub.htm"><b>Klub</b></a>
+                        <ul>
+                            <li><a href="Historia.htm">Historia</a></li>
+                            <li><a href="Stadion.htm">Stadion</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="Zawodnicy.htm"><b>Zawodnicy</b></a></li>
+                    <li><a href="Galeria.htm"><b>Zdobyte trofea-GALERIA</b></a></li>
+
+                </ol>
+            </div>
+
+
+
+            <div id="tresc">
+
+                
+              
+
+              
+                
+
+
+                <h3 class="estadio"> <i>Estadio Santiago Bernabeu</i> </h3>
+                    
+                <h3>
+                    <br /><br />
+                    Stadion piłkarski w stolicy Hiszpanii, Madrycie.Jest macierzystym obiektem Realu Madryt, mecze rozgrywa na nim także reprezentacja Hiszpanii.
+                    22 maja 2010 roku odbył się tu 55. finał Ligi Mistrzów UEFA.
+                    Uważany jest za jeden z najpiękniejszych kompleksów sportowych na świecie.
+
+                </h3>
+                   
+               
+
+
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <a href="http://www.realmadrid.pl">Po wiecej informacji zapraszam tutaj</a>
+                <br />
+                <a href="Historia.htm#GranDerbi">Przejście do Gran Derbi (Klub->Historia)</a>
+
+
+
+
+            </div>
+            <div id="barwy">
+                <h2>REPREZENTOWANIE BARW REALU </h2>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('#barwy').click(function () {
+                        $(this).animate({ height: '+=30' }, 500)
+                        .animate({ backgroundcolor: 'white' }, 1000)
+                        .animate({ left: '+100', width: '+=100', backgroundColor: 'blue' }, 500)
+                        .animate({ bottom: '+=50', backgroundColor: 'yellow' }, 500);
+                    });
+                });
+               
+            </script>
+
+
+            <div id="sessionKlub" onload="count_onloads_session();">
+                Licznik odwiedzin tej podstrony (W OBECNEJ SESJI)
+            </div>
+
+
+            <div id="footer">
+
+                <h3 class="mail"><i><a href="mailto:kazanov18@wp.pl">Jeśli masz jakikolwiek problem, napisz</a></i></h3>
+                &copy; MK
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
